@@ -2,8 +2,33 @@
   "name": "image-migrate-helper",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "dev": "bun --watch ./src/index.ts",
+    "start": "bun ./src/index.ts"
+
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.428.0",
+    "@aws-sdk/lib-storage": "^3.428.0",
+    "axios": "^1.6.0",
+    "pg": "^8.8.0",
+    "reflect-metadata": "^0.1.13",
+    "sharp": "^0.32.6",
+    "typeorm": "^0.3.16",
+    "uuid": "^9.0.1"
+  },
   "devDependencies": {
-    "bun-types": "^1.0.7"
+    "@types/node": "^20.8.9",
+    "@types/pg": "^8.10.5",
+    "@types/uuid": "^9.0.5",
+    "bun-types": "^1.0.7",
+    "eslint": "^8.43.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jest": "^27.2.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.31.10"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
